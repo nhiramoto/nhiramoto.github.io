@@ -12,14 +12,23 @@ $primary-color: #58A8D5
   padding: 10px
   background-color: $background
   color: $color
-  text-shadow: 0 2px 10px black
+  text-shadow: 0 2px 10px #121212
+  a
+    color: inherit
   .hoverable
-    text-shadow: 0 2px 10px black
+    text-shadow: 0 2px 10px #121212
     transition: text-shadow .5s ease
-    cursor: pointer
   .hoverable:hover
     text-shadow: 0 2px 30px black
     transition: text-shadow .3s ease
+  .clickable
+    cursor: pointer
+    user-select: none
+    transition: color .5s ease, text-shadow .5s ease
+  .clickable:hover
+    color: $primary-color
+    text-shadow: 0 0 30px $primary-color
+    transition: color .3s ease, text-shadow .3s ease
   .About-container
     display: table-cell
     vertical-align: top
@@ -29,8 +38,9 @@ $primary-color: #58A8D5
       margin-top: 8em
       .info
         padding: 0 30px
+        font-size: 1em
         div
-          margin: 0 50px
+          margin: 15px 50px
         .name
           font-size: 4em
           .second-name
@@ -38,4 +48,9 @@ $primary-color: #58A8D5
         .desc
           font-size: 1em
           color: darken($color, 20)
+        .links
+          font-size: 1.8em
+          a
+            margin-left: 10px
+            margin-right: 10px
 
