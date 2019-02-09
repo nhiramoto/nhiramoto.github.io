@@ -12,7 +12,8 @@ class About extends Component {
                             <div className="name hoverable">nh<span className="second-name">toshiaki</span></div>
                             <div className="desc hoverable">Computer Scientist, Programmer, Linux enthusiast.</div>
                             <div className="links">
-                                <IconizedLink icon="github" link="https://github.com/nhtoshiaki" target="_blank" />
+                                <IconizedLink icon="github" color="blue" link="https://github.com/nhtoshiaki" />
+                                <IconizedLink icon="email" color="red" link="mailto:nicolau.hiramoto@gmail.com" />
                             </div>
                         </div>
                     </div>
