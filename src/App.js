@@ -3,10 +3,6 @@ import './App.sass';
 import About from './components/About/About';
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className="App">
