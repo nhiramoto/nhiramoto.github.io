@@ -34,7 +34,7 @@ class IconizedLink extends Component {
         }
         return (
             <div className="IconizedLink" >
-                <a href={this.props.link} rel="noopener" target="_blank">
+                <a href={this.props.link} target="_blank" rel="noopener noreferrer">
                     <span className="icon" style={style}>
                         <FontAwesomeIcon icon={icon} className="svg-icon" />
                     </span>
