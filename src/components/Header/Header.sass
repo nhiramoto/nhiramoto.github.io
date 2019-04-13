@@ -2,8 +2,7 @@ $background: #333
 $color: #EFEFEF
 $primary-color: #58A8D5
 
-.About
-  position: absolute
+.Header
   box-sizing: border-box
   display: table
   width: 100%
@@ -29,29 +28,25 @@ $primary-color: #58A8D5
     color: $primary-color
     text-shadow: 0 0 30px $primary-color
     transition: color .3s ease, text-shadow .3s ease
-  .About-container
+  .Header-container
     display: table-cell
-    vertical-align: top
-    .info-container
-      margin-right: auto
-      margin-left: auto
-      margin-top: 8em
-      .info
-        padding: 0 30px
+    vertical-align: middle
+    .info
+      padding: 0 30px
+      font-size: 1em
+      div
+        margin: 20px 50px
+      .name
+        font-size: 4em
+        .last-name
+          color: $primary-color
+      .desc
         font-size: 1em
-        div
-          margin: 20px 50px
-        .name
-          font-size: 4em
-          .second-name
-            color: $primary-color
-        .desc
-          font-size: 1em
-          color: darken($color, 20)
-          margin-bottom: 50px
-        .links
-          font-size: 1.8em
-          a
-            margin-left: 10px
-            margin-right: 10px
+        color: darken($color, 20)
+        margin-bottom: 50px
+      .links
+        font-size: 1.8em
+        a
+          margin-left: 10px
+          margin-right: 10px
 
