@@ -1,8 +1,10 @@
+@import '../../fonts'
+
 $background: #333
 $color: #EFEFEF
 $primary-color: #58A8D5
 
-.Header
+.Introduction
   box-sizing: border-box
   display: table
   width: 100%
@@ -28,14 +30,24 @@ $primary-color: #58A8D5
     color: $primary-color
     text-shadow: 0 0 30px $primary-color
     transition: color .3s ease, text-shadow .3s ease
-  .Header-container
+  .Introduction-container
     display: table-cell
     vertical-align: middle
     .info
       padding: 0 30px
       font-size: 1em
+      .long-name
+        display: inline-block
+        @media screen and (max-width: 520px)
+          display: none
+      .short-name
+        display: none
+        @media screen and (max-width: 520px)
+          display: inline-block
       div
         margin: 20px 50px
+      .name, .last-name
+        font-family: 'Libre Baskerville', serif
       .name
         font-size: 4em
         .last-name

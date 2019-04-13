@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import './Layout.sass';
-import Header from '../Header/Header';
+import Introduction from '../Introduction/Introduction';
+import Academic from '../Academic/Academic';
 
 class Layout extends Component {
 
@@ -37,11 +38,15 @@ class Layout extends Component {
             <div id="layout-container">
                 <nav className="navbar">
                     <ul className="bubbles">
-                        <li><a href="#header" onMouseEnter={this.handleNavItemMouseEnter} onMouseOut={this.handleNavItemMouseOut}>Header</a></li>
+                        <li><a href="#introduction" onMouseEnter={this.handleNavItemMouseEnter} onMouseOut={this.handleNavItemMouseOut}>Introduction</a></li>
+                        <li><a href="#academic" onMouseEnter={this.handleNavItemMouseEnter} onMouseOut={this.handleNavItemMouseOut}>Academic</a></li>
                     </ul>
                 </nav>
-                <section id="header" className="section">
-                    <Header />
+                <section id="introduction" className="section">
+                    <Introduction />
+                </section>
+                <section id="academic" className="section">
+                    <Academic />
                 </section>
             </div>
         );
