@@ -1,8 +1,15 @@
 {
-  "short_name": "About Me",
-  "name": "About Me Website",
+  "short_name": "Nicolau Hiramoto",
+  "name": "Nicolau Hiramoto - About Me",
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "icons": [
+      {
+          "src": "favicon.ico",
+          "sizes": "180x180 32x32 16x16",
+          "type": "image/x-icon"
+      }
+  ]
 }
