@@ -3,6 +3,7 @@ import $ from 'jquery';
 import './Layout.sass';
 import Introduction from '../Introduction/Introduction';
 import Academic from '../Academic/Academic';
+import Portfolio from '../Portfolio/Portfolio';
 
 class Layout extends Component {
 
@@ -40,6 +41,7 @@ class Layout extends Component {
                     <ul className="bubbles">
                         <li><a href="#introduction" onMouseEnter={this.handleNavItemMouseEnter} onMouseOut={this.handleNavItemMouseOut}>Introduction</a></li>
                         <li><a href="#academic" onMouseEnter={this.handleNavItemMouseEnter} onMouseOut={this.handleNavItemMouseOut}>Academic</a></li>
+                        <li><a href="#portfolio" onMouseEnter={this.handleNavItemMouseEnter} onMouseOut={this.handleNavItemMouseOut}>Portfolio</a></li>
                     </ul>
                 </nav>
                 <section id="introduction" className="section">
@@ -47,6 +49,9 @@ class Layout extends Component {
                 </section>
                 <section id="academic" className="section">
                     <Academic />
+                </section>
+                <section id="portfolio" className="section">
+                    <Portfolio />
                 </section>
             </div>
         );
