@@ -8,20 +8,20 @@ class Portfolio extends Component {
                 <h1>Portfolio</h1>
                 <ul id="project-list" className="">
                     <li className="card">
-                        <h2 className="card-header">Title</h2>
+                        <h2 className="card-header">LocStat</h2>
                         <div className="card-content">
-                            <p>Description here...</p>
+                            <p>A Web Scraper that reports the statistics of source code lines from Git repositories.</p>
                             <span className="btn-group">
-                                <a className="btn" href="#">Link</a>
+                                <a className="btn" href="https://github.com/nhtoshiaki/LocStat">Source Code</a>
                             </span>
                         </div>
                     </li>
                     <li className="card">
-                        <h2 className="card-header">Project 2</h2>
+                        <h2 className="card-header">GitView</h2>
                         <div className="card-content">
-                            <p>Description here...</p>
+                            <p>A visualization tool for Git repositories.</p>
                             <span className="btn-group">
-                                <a className="btn" href="#">Link</a>
+                                <a className="btn" href="https://github.com/nhtoshiaki/GitView">Source Code</a>
                             </span>
                         </div>
                     </li>
