@@ -2,19 +2,23 @@ import React, { Component } from 'react';
 import './IconizedLink.sass';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faCodepen } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faGithub);
 library.add(faEnvelope);
+library.add(faCodepen);
 
 class IconizedLink extends Component {
     render() {
-        let icon, style;
+        let icon, style, text;
+        text = this.props.text ? this.props.text : this.props.link;
         if (this.props.icon === "github") {
             icon = faGithub;
         } else if (this.props.icon === "email") {
             icon = faEnvelope;
+        } else if (this.props.icon === "codepen") {
+            icon = faCodepen;
         }
         if (this.props.color === 'blue') {
             style = {
@@ -23,10 +27,10 @@ class IconizedLink extends Component {
             }
         } else if (this.props.color === "cyan") {
             style = {
-                backgroundColor: 'cyan',
+                backgroundColor: 'darkcyan',
                 color: '#EFEFEF'
             }
-        } else if (this.props.color === "red") {
+        } else if (this.props.color === "purple") {
             style = {
                 backgroundColor: '#55557f',
                 color: '#EFEFEF'
@@ -39,7 +43,7 @@ class IconizedLink extends Component {
                         <FontAwesomeIcon icon={icon} className="svg-icon" />
                     </span>
                     <span className="link" style={style}>
-                        {this.props.link}
+                        {text}
                     </span>
                 </a>
             </div>

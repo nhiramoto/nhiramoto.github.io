@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Portfolio.sass';
+import Card from '../Card/Card';
 
 class Portfolio extends Component {
     render() {
@@ -7,23 +8,11 @@ class Portfolio extends Component {
             <div className="Portfolio">
                 <h1>Portfolio</h1>
                 <ul id="project-list" className="">
-                    <li className="card">
-                        <h2 className="card-header">LocStat</h2>
-                        <div className="card-content">
-                            <p>A Web Scraper that reports the statistics of source code lines from Git repositories.</p>
-                            <span className="btn-group">
-                                <a className="btn" href="https://github.com/nhtoshiaki/LocStat">Source Code</a>
-                            </span>
-                        </div>
+                    <li>
+                        <Card title="LocStat" desc="A Web Scraper that reports the statistics of source code lines from Git repositories." link="https://github.com/nhtoshiaki/LocStat" />
                     </li>
-                    <li className="card">
-                        <h2 className="card-header">GitView</h2>
-                        <div className="card-content">
-                            <p>A visualization tool for Git repositories.</p>
-                            <span className="btn-group">
-                                <a className="btn" href="https://github.com/nhtoshiaki/GitView">Source Code</a>
-                            </span>
-                        </div>
+                    <li>
+                        <Card title="GitView" desc="A tool that uses Information Visualization techniques to represent changes made to Git repositories." link="https://github.com/nhtoshiaki/GitView" />
                     </li>
                 </ul>
             </div>
