@@ -14,7 +14,7 @@ class Card extends Component {
                 <div className="card-content">
                     <p>{this.props.desc}</p>
                     <span className="btn-group">
-                        <a className="btn" title="Source Code" href="{this.props.link}" target="_blank" rel="noopener noreferrer">
+                        <a className="btn" title="Source Code" href={this.props.link} target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faGithub} className="svg-icon" />
                         </a>
                     </span>
