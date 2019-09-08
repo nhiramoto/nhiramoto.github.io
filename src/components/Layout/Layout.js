@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import './Layout.sass';
 import Introduction from '../Introduction/Introduction';
-import Academic from '../Academic/Academic';
+import Experience from '../Experience/Experience';
 import Portfolio from '../Portfolio/Portfolio';
 import Footer from '../Footer/Footer';
 
@@ -41,7 +41,7 @@ class Layout extends Component {
                 <nav className="navbar">
                     <ul className="bubbles">
                         <li><a href="#introduction" onMouseEnter={this.handleNavItemMouseEnter} onMouseOut={this.handleNavItemMouseOut}>Introduction</a></li>
-                        <li><a href="#academic" onMouseEnter={this.handleNavItemMouseEnter} onMouseOut={this.handleNavItemMouseOut}>Academic</a></li>
+                        <li><a href="#experience" onMouseEnter={this.handleNavItemMouseEnter} onMouseOut={this.handleNavItemMouseOut}>Experience</a></li>
                         <li><a href="#portfolio" onMouseEnter={this.handleNavItemMouseEnter} onMouseOut={this.handleNavItemMouseOut}>Portfolio</a></li>
                         <li><a href="#footer" onMouseEnter={this.handleNavItemMouseEnter} onMouseOut={this.handleNavItemMouseOut}>Contact</a></li>
                     </ul>
@@ -49,8 +49,8 @@ class Layout extends Component {
                 <section id="introduction" className="section">
                     <Introduction />
                 </section>
-                <section id="academic" className="section">
-                    <Academic />
+                <section id="experience" className="section">
+                    <Experience />
                 </section>
                 <section id="portfolio" className="section">
                     <Portfolio />
