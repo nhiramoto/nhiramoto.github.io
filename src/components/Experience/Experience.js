@@ -9,7 +9,7 @@ class Academic extends Component {
                 <ul className="historic">
                     <li>
                         <span className="years">2019 - current</span>
-                        <span className="qualification">Software Engineer</span>
+                        <span className="qualification">Software Developer</span>
                         <span className="institution">Sweda Informática</span>
                         <span className="location">SP, Brazil</span>
                     </li>

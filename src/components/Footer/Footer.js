@@ -7,7 +7,7 @@ class Footer extends Component {
         return (
             <div className="Footer">
                 <div className="footer-text">
-                    <p>This webpage was developed with React and stylized from scratch with Sass. See the source code <a href="https://github.com/nhtoshiaki/nhtoshiaki.github.io" target="_blank" rel="noopener noreferrer">here</a>.</p>
+                    <p>This webpage was developed with React and styled from scratch with Sass. See the source code <a href="https://github.com/nhtoshiaki/nhtoshiaki.github.io" target="_blank" rel="noopener noreferrer">here</a>.</p>
                 </div>
                 <div className="contact-links">
                     <IconizedLink icon="email" link="mailto:nicolau.hiramoto@gmail.com" text="nicolau.hiramoto@gmail.com" color="purple" />

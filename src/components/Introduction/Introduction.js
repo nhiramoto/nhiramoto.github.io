@@ -10,7 +10,7 @@ class Introduction extends Component {
                     <div className="info">
                         <div className="name hoverable intro-rows"><span className="long-name">Nicolau</span><span className="short-name">N</span> <span className="last-name long-name">Hiramoto</span><span className="last-name short-name">H</span></div>
                         <div className="desc hoverable intro-rows">
-                            <Tag name="Software Engineer" />
+                            <Tag name="Software Developer" />
                             <Tag name="Computer Scientist" />
                             <Tag name="Linux enthusiast" />
                         </div>

@@ -9,6 +9,9 @@ class Portfolio extends Component {
                 <h1>Portfolio</h1>
                 <ul id="project-list" className="">
                     <li>
+                        <Card title="Personal Webpage" desc="This webpage containing information about my experiences and projects." link="https://github.com/nhtoshiaki/nhtoshiaki.github.io" />
+                    </li>
+                    <li>
                         <Card title="LocStat" desc="A Web Scraper that reports the statistics of source code lines from Git repositories." link="https://github.com/nhtoshiaki/LocStat" />
                     </li>
                     <li>

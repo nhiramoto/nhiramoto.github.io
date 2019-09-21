@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import './Layout.sass';
 import Introduction from '../Introduction/Introduction';
-import Experience from '../Experience/Experience';
 import Portfolio from '../Portfolio/Portfolio';
+import Skills from '../Skills/Skills';
+import Experience from '../Experience/Experience';
 import Footer from '../Footer/Footer';
 
 class Layout extends Component {
@@ -41,19 +42,23 @@ class Layout extends Component {
                 <nav className="navbar">
                     <ul className="bubbles">
                         <li><a href="#introduction" onMouseEnter={this.handleNavItemMouseEnter} onMouseOut={this.handleNavItemMouseOut}>Introduction</a></li>
-                        <li><a href="#experience" onMouseEnter={this.handleNavItemMouseEnter} onMouseOut={this.handleNavItemMouseOut}>Experience</a></li>
                         <li><a href="#portfolio" onMouseEnter={this.handleNavItemMouseEnter} onMouseOut={this.handleNavItemMouseOut}>Portfolio</a></li>
+                        <li><a href="#skills" onMouseEnter={this.handleNavItemMouseEnter} onMouseOut={this.handleNavItemMouseOut}>Skills</a></li>
+                        <li><a href="#experience" onMouseEnter={this.handleNavItemMouseEnter} onMouseOut={this.handleNavItemMouseOut}>Experience</a></li>
                         <li><a href="#footer" onMouseEnter={this.handleNavItemMouseEnter} onMouseOut={this.handleNavItemMouseOut}>Contact</a></li>
                     </ul>
                 </nav>
                 <section id="introduction" className="section">
                     <Introduction />
                 </section>
-                <section id="experience" className="section">
-                    <Experience />
-                </section>
                 <section id="portfolio" className="section">
                     <Portfolio />
+                </section>
+                <section id="skills" className="section">
+                    <Skills />
+                </section>
+                <section id="experience" className="section">
+                    <Experience />
                 </section>
                 <section id="footer" className="section">
                     <Footer />
