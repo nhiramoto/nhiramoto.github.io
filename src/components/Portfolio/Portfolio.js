@@ -18,6 +18,12 @@ class Portfolio extends Component {
                         <Card title="GitView" desc="A tool that uses Information Visualization techniques to represent changes made to Git repositories." link="https://github.com/nhtoshiaki/GitView" />
                     </li>
                     <li>
+                        <Card title="vis-tagcloud" desc="A data visualization tool for keywords of co-authored articles." link="https://github.com/nhtoshiaki/vis-tagcloud" />
+                    </li>
+                    <li>
+                        <Card title="Simpleton" desc="A virtual machine that evaluates simple arithmetic expressions." link="https://github.com/nhtoshiaki/Simpleton" />
+                    </li>
+                    <li>
                         <Card title="n-hub (mockup)" desc="A mockup of an aggregator of email, chat, calendar and news feed." link="https://github.com/nhtoshiaki/n-hub" />
                     </li>
                 </ul>

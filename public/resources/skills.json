@@ -1,0 +1,106 @@
+[
+    {
+        "skill": "Java",
+        "level": 95
+    },
+    {
+        "skill": "JavaScript",
+        "level": 80
+    },
+    {
+        "skill": "Python",
+        "lavel": 70
+    },
+    {
+        "skill": "HTML",
+        "level": 60
+    },
+    {
+        "skill": "CSS",
+        "level": 50
+    },
+    {
+        "skill": "SASS",
+        "level": 50
+    },
+    {
+        "skill": "C",
+        "level": 80
+    },
+    {
+        "skill": "C++",
+        "level": 70
+    },
+    {
+        "skill": "React.js",
+        "level": 30
+    },
+    {
+        "skill": "Node.js",
+        "level": 40
+    },
+    {
+        "skill": "Shell Script",
+        "level": 30
+    },
+    {
+        "skill": "Lua",
+        "level": 30
+    },
+    {
+        "skill": "vim",
+        "level": 60
+    },
+    {
+        "skill": "Linux",
+        "level": 50
+    },
+    {
+        "skill": "Primefaces",
+        "level": 40
+    },
+    {
+        "skill": "Hibernate",
+        "level": 45
+    },
+    {
+        "skill": "OOP",
+        "level": 70
+    },
+    {
+        "skill": "UML",
+        "level": 45
+    },
+    {
+        "skill": "emacs",
+        "level": 30
+    },
+    {
+        "skill": "Git",
+        "level": 60
+    },
+    {
+        "skill": "AJAX",
+        "level": 10
+    },
+    {
+        "skill": "jQuery",
+        "level": 40
+    },
+    {
+        "skill": "LaTeX",
+        "level": 50
+    },
+    {
+        "skill": "Continuous Integration",
+        "level": 10
+    },
+    {
+        "skill": "Unit Testing",
+        "level": 20
+    },
+    {
+        "skill": "Design Patterns",
+        "level": 30
+    }
+]
