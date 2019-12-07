@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import './Skills.sass';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCogs } from '@fortawesome/free-solid-svg-icons';
 import * as d3 from 'd3';
 import * as d3Cloud from 'd3-cloud';
+
+library.add(faCogs);
 
 class Skills extends Component {
     constructor() {
@@ -49,16 +54,35 @@ class Skills extends Component {
                 .style('font-size', d => d.size + 'px')
                 .style('font-family', 'Montserrat')
                 .style('font-weight', 'bold')
+                .style('cursor', 'pointer')
                 .style('opacity', d => this.opacity(d.level))
                 .attr('text-anchor', 'middle')
                 .attr('transform', d => 'translate(' + d.x + ',' + d.y + ')rotate(' + d.rotate + ')')
-                .text(d => { console.log('d: ' + d); return d.text; });
+                .text(d => { console.log('d: ' + d); return d.text; })
+            .on('mouseover', this.handleMouseOver)
+                .on('mouseout', this.handleMouseOut);
+    }
+
+    handleMouseOver(d, i) {
+        d3.select(this)
+            .transition()
+                .duration(500)
+                .ease(d3.easeElastic)
+                .style('font-size', d => d.size * 1.5 + 'px');
+    }
+
+    handleMouseOut(d, i) {
+        d3.select(this)
+            .transition()
+                .duration(800)
+                .ease(d3.easeElastic)
+                .style('font-size', d => d.size + 'px');
     }
 
     render() {
         return (
             <div className="Skills">
-                <h1>Skills</h1>
+                <h1><span className="header-icons"><FontAwesomeIcon icon={faCogs} /></span> Skills</h1>
                 <div id="skills-content"> </div>
             </div>
         );

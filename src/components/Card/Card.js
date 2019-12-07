@@ -10,7 +10,7 @@ class Card extends Component {
     render() {
         return (
             <div className="Card">
-                <h2 className="card-header">{this.props.title}</h2>
+                <h2 className="card-header dark-bg">{this.props.title}</h2>
                 <div className="card-content">
                     <p>{this.props.desc}</p>
                     <span className="btn-group">

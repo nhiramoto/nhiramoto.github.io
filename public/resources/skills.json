@@ -102,5 +102,21 @@
     {
         "skill": "Design Patterns",
         "level": 30
+    },
+    {
+        "skill": "JMS",
+        "level": 20
+    },
+    {
+        "skill": "REST",
+        "level": 20
+    },
+    {
+        "skill": "TypeScript",
+        "level": 30
+    },
+    {
+        "skill": "RegExp",
+        "level": 70
     }
 ]

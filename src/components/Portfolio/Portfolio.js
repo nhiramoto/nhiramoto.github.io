@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import './Portfolio.sass';
 import Card from '../Card/Card';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPuzzlePiece } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faPuzzlePiece);
 
 class Portfolio extends Component {
     render() {
         return (
             <div className="Portfolio">
-                <h1>Portfolio</h1>
+                <h1><span className="header-icons"><FontAwesomeIcon icon={faPuzzlePiece} /></span> Portfolio</h1>
                 <ul id="project-list" className="">
                     <li>
                         <Card title="Personal Webpage" desc="This webpage containing information about my experiences and projects." link="https://github.com/nhtoshiaki/nhtoshiaki.github.io" />

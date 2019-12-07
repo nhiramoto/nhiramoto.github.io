@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
 import './Experience.sass';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGraduationCap, faBriefcase } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faGraduationCap);
+library.add(faBriefcase);
 
 class Academic extends Component {
     render() {
         return (
             <div className="Academic">
-                <h1>Experience &amp; Education</h1>
+                <h1>
+                    <span className="header-icons"><FontAwesomeIcon icon={faBriefcase} />
+                    </span> Experience &amp; Education</h1>
                 <ul className="historic">
                     <li>
                         <span className="years">2019 - current</span>

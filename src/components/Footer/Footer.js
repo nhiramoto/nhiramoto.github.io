@@ -5,7 +5,7 @@ import IconizedLink from '../IconizedLink/IconizedLink';
 class Footer extends Component {
     render() {
         return (
-            <div className="Footer">
+            <div className="Footer dark-bg">
                 <div className="footer-text">
                     <p>This webpage was developed with React and styled from scratch with Sass. See the source code <a href="https://github.com/nhtoshiaki/nhtoshiaki.github.io" target="_blank" rel="noopener noreferrer">here</a>.</p>
                 </div>
