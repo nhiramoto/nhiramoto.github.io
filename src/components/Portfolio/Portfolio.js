@@ -14,22 +14,40 @@ class Portfolio extends Component {
                 <h1><span className="header-icons"><FontAwesomeIcon icon={faPuzzlePiece} /></span> Portfolio</h1>
                 <ul id="project-list" className="">
                     <li>
-                        <Card title="Personal Webpage" desc="This webpage containing information about my experiences and projects." link="https://github.com/nhtoshiaki/nhtoshiaki.github.io" />
+                        <Card title="Personal Webpage"
+                            desc="This webpage containing my experiences and projects."
+                            longDesc="This webpage hosted on Github Pages containing information about my experiences, education and projects. This webpage was developed using JavaScript, React, SASS/CSS, HTML."
+                            link="https://github.com/nhtoshiaki/nhtoshiaki.github.io" />
                     </li>
                     <li>
-                        <Card title="LocStat" desc="A Web Scraper that reports the statistics of source code lines from Git repositories." link="https://github.com/nhtoshiaki/LocStat" />
+                        <Card title="LocStat"
+                        desc="A Web Scraper that reports the statistical informations from Git repositories."
+                        longDesc="A Web Scraper that reports the statistics of source lines of code from public Git repositories hosted on Github. This tool was developed using Python and Scrapy."
+                        link="https://github.com/nhtoshiaki/LocStat" />
                     </li>
                     <li>
-                        <Card title="GitView" desc="A tool that uses Information Visualization techniques to represent changes made to Git repositories." link="https://github.com/nhtoshiaki/GitView" />
+                        <Card title="GitView"
+                        desc="A data visualization tool for Git repositories."
+                        longDesc="A tool that uses information visualization techniques to represent changes made to each version of projects that uses Git as version control system. This tool was developed using JavaScript, Node.js, Electron, D3, HTML and SASS/CSS."
+                        link="https://github.com/nhtoshiaki/GitView" />
                     </li>
                     <li>
-                        <Card title="vis-tagcloud" desc="A data visualization tool for keywords of co-authored articles." link="https://github.com/nhtoshiaki/vis-tagcloud" />
+                        <Card title="vis-tagcloud"
+                        desc="A data visualization tool for keywords of co-authored articles."
+                        longDesc="A webapp tool that uses Tag Cloud and a Graph based visualization technique to represent the most relevant keywords from co-authored articles published by researchers. This tool was developed using PHP, HTML, JavaScript, D3, jQuery/AJAX, HTML, SASS/CSS and MySQL."
+                        link="https://github.com/nhtoshiaki/vis-tagcloud" />
                     </li>
                     <li>
-                        <Card title="Simpleton" desc="A virtual machine that evaluates simple arithmetic expressions." link="https://github.com/nhtoshiaki/Simpleton" />
+                        <Card title="Simpleton"
+                        desc="A virtual machine that evaluates simple arithmetic expressions."
+                        longDesc="A simple virtual machine that evaluates basic arithmetic expressions and performs basic memory read and write operations. This simple virtual machine was developed using C++ and GNU Make."
+                        link="https://github.com/nhtoshiaki/Simpleton" />
                     </li>
                     <li>
-                        <Card title="n-hub (mockup)" desc="A mockup of an aggregator of email, chat, calendar and news feed." link="https://github.com/nhtoshiaki/n-hub" />
+                        <Card title="n-hub (mockup)"
+                        desc="A mockup of an aggregator."
+                        longDesc="A mockup of an aggregator that gathers email, chat, calendar and news feed. This mockup was developed using JavaScript, Node.js, Electron, HTML and SASS/CSS."
+                        link="https://github.com/nhtoshiaki/n-hub" />
                     </li>
                 </ul>
             </div>

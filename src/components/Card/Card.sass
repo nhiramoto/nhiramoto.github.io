@@ -5,32 +5,55 @@ $color: #333
 $primary-color: #58A8D5
 
 .Card
+  position: relative
   display: block
   margin: 20px
   border-radius: 5px
   width: 300px
+  height: auto
   background: #EFEFEF
   box-shadow: 0 8px 30px 5px gray
-  .card-header
-    margin: 0
-    padding: 5px
-    padding-top: 10px
-    padding-bottom: 10px
-    border-radius: 5px 5px 0 0
-    color: $bgColor
-    font-size: 1.5rem
-    text-align: center
-  .card-content
-    margin: 0
-    padding: 10px
-    p
+  transform-style: preserve-3d
+  transform: none
+  transition: transform .5s ease
+  .card-front, .card-back
+    backface-visibility: hidden
+    transform: rotateX(0deg)
+    pointer-events: none
+    .card-header
       margin: 0
-      margin-bottom: 10px
-    .btn-group
-      display: flex
-      justify-content: flex-end
-      align-items: start
-      .btn
-        margin: 5px
-        text-decoration: none
-        color: $color
+      padding: 5px
+      padding-top: 10px
+      padding-bottom: 10px
+      border-radius: 5px 5px 0 0
+      color: $bgColor
+      font-size: 1.5rem
+      text-align: center
+    .card-body
+      margin: 0
+      padding: 10px
+      text-align: justify
+      p
+        margin: 0
+        margin-bottom: 10px
+      .btn-group
+        display: flex
+        justify-content: flex-end
+        align-items: flex-start
+        .btn
+          margin: 5px
+          text-decoration: none
+          color: $color
+  .card-front
+    display: block
+  .card-back
+    transform: rotateY(180deg)
+    display: none
+
+.Card.flipped
+  transition: transform .3s ease
+  transform: rotateY(180deg) translateZ(-50px)
+  .card-front
+    display: none
+  .card-back
+    display: block

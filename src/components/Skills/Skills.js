@@ -29,7 +29,6 @@ class Skills extends Component {
             .attr('class','wordcloud')
             .attr('transform', 'translate(' + width/2 + ',' + height/2 + ')');
         d3.json('/resources/skills.json').then(data => {
-            console.dir(data);
             d3Cloud()
                 .size([width, height])
                 .words(data)
@@ -58,7 +57,7 @@ class Skills extends Component {
                 .style('opacity', d => this.opacity(d.level))
                 .attr('text-anchor', 'middle')
                 .attr('transform', d => 'translate(' + d.x + ',' + d.y + ')rotate(' + d.rotate + ')')
-                .text(d => { console.log('d: ' + d); return d.text; })
+                .text(d => d.text)
             .on('mouseover', this.handleMouseOver)
                 .on('mouseout', this.handleMouseOut);
     }
