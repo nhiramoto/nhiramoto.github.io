@@ -9,34 +9,25 @@ $primary-color: #58A8D5
   height: 100%
   padding: 40px
   box-sizing: border-box
+  .Card
+    margin: 20px
   h1
     margin-bottom: 30px
     font-size: 2rem
-  ul.historic
-    list-style: none
+  .historic
+    display: flex
+    align-items: flex-start
+    justify-content: space-evenly
+    flex-wrap: wrap
+  .qualification, .institution, .location
+    display: block
+    margin: 15px
     text-align: left
-    overflow: auto
-    li
-      margin-top: 1em
-      overflow: auto
-      min-width: 370px
-    .years
-      display: block
-      font-weight: bold
-      padding: 5px
-    .qualification
-      display: block
-      font-size: 1.5em
-      text-indent: 20px
-      padding: 5px
-    .institution
-      display: block
-      font-size: 0.9em
-      text-indent: 20px
-      padding: 5px
-    .location
-      display: block
-      font-size: 0.9em
-      text-indent: 20px
-      padding: 5px
-
+  .qualification
+    font-family: sans
+    font-weight: 500
+    font-size: 1.2rem
+  .location
+    font-size: 0.85rem
+    color: lighten($color, 10%)
+    font-style: italic
