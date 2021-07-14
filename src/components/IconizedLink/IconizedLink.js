@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
 import './IconizedLink.sass';
-import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faCodepen } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faCodepen, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-
-library.add(faGithub);
-library.add(faEnvelope);
-library.add(faCodepen);
 
 class IconizedLink extends Component {
     render() {
@@ -19,6 +14,8 @@ class IconizedLink extends Component {
             icon = faEnvelope;
         } else if (this.props.icon === "codepen") {
             icon = faCodepen;
+        } else if (this.props.icon === "linkedin") {
+            icon = faLinkedin;
         }
         if (this.props.color === 'blue') {
             style = {
@@ -33,6 +30,11 @@ class IconizedLink extends Component {
         } else if (this.props.color === "purple") {
             style = {
                 backgroundColor: '#55557f',
+                color: '#EFEFEF'
+            }
+        } else if (this.props.color.startsWith('#')) {
+            style = {
+                backgroundColor: this.props.color,
                 color: '#EFEFEF'
             }
         }

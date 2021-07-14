@@ -12,7 +12,8 @@ class Footer extends Component {
                 <div className="contact-links">
                     <IconizedLink icon="email" link="mailto:nicolau.hiramoto@gmail.com" text="nicolau.hiramoto@gmail.com" color="purple" />
                     <IconizedLink icon="github" link="https://github.com/nhiramoto" text="Github" color="blue" />
-                    <IconizedLink icon="codepen" link="https://codepen.io/nhtoshiaki/" text="Codepen.io" color="cyan" />
+                    <IconizedLink icon="codepen" link="https://codepen.io/nhiramoto" text="Codepen.io" color="cyan" />
+                    <IconizedLink icon="linkedin" link="https://www.linkedin.com/in/nicolauh" text="Linkedin" color="#0A66C2" />
                 </div>
             </div>
         );

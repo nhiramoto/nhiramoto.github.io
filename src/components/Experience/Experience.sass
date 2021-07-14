@@ -5,7 +5,7 @@ $color: #333
 $primary-color: #58A8D5
 
 .Academic
-  width: 100%
+  width: 90%
   height: 100%
   padding: 40px
   box-sizing: border-box
@@ -16,18 +16,19 @@ $primary-color: #58A8D5
     font-size: 2rem
   .historic
     display: flex
-    align-items: flex-start
+    flex-direction: column
+    align-items: stretch
     justify-content: space-evenly
-    flex-wrap: wrap
+    flex-wrap: nowrap
   .qualification, .institution, .location
+    font-family: sans
     display: block
-    margin: 15px
+    margin: 8px
     text-align: left
   .qualification
-    font-family: sans
-    font-weight: 500
-    font-size: 1.2rem
+    font-weight: 600
+    font-size: 1.1rem
   .location
     font-size: 0.85rem
-    color: lighten($color, 10%)
+    color: lighten($color, 30%)
     font-style: italic
